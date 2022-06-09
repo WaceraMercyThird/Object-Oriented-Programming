@@ -4,23 +4,35 @@
 
 class Account:
     
-    def __init__(self,name,accountname,balance,pin):
+    def __init__(self,name,accountnumber,pin):
+        self.balance=0
         self. name= name
-        self. accountname= accountname
-        self.balance=balance
+        self. accountnumber= accountnumber
+
         self.pin=pin
 
      # class Method
     def deposit(self,deposit):
         self.balance+= deposit
-
-
-        return f"{self.balance}"
+        if deposit <= 0:
+            return f"Deposit amount should be more that 0"
+        else:
+            return f"you have deposited {deposit}, and this is your new balance {self.balance}" 
         
 
     def withdraw(self,withdraw):
-       self.balance-= withdrawa
-       return f"{self.balance}"
+       if withdraw>self.balance:
+           return f"your balance is {self.balance}, you cannot withdraw {withdraw}"
+       elif withdraw<0:
+           return f"your amount should be more that zero"
+       else:
+           self.balance-= withdraw
+           return f"you have deposited {withdraw}, and this is your new balance {self.balance}" 
+        
+    
+
+
+    
 
         
 
