@@ -2,7 +2,7 @@
 
 class Account:
    
-    withdraw=[]
+    
     def __init__(self,name,accountnumber,pin):
         self.balance=0
         self. name= name
