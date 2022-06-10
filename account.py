@@ -18,24 +18,45 @@ class Account:
             return f"Deposit amount should be more that 0"
         else:
             self.balance+= deposit
-            self.deposits.append(self.balance)
-            return f"you have deposited {deposit}, and this is your new balance {self.balance}" 
+            self.deposits.append(deposit)
+            return f"you have deposited {deposit}Kshs, and this is your new balance {self.balance}Kshs" 
         
     def withdraw(self,withdraw):
         if withdraw>self.balance:
-           return f"your balance is {self.balance}, you cannot withdraw {withdraw}"
+           return f"your balance is {self.balance}Kshs, you cannot withdraw {withdraw}Kshs"
         elif withdraw<0:
            return f"your amount should be more that zero"
         else:
             self.balance-= withdraw
             self.withdraws.append(self.balance)
-            return f"you have withdraw {withdraw}, and this is your new balance {self.balance}" 
+            return f"you have withdraw {withdraw}Kshs, and this is your new balance {self.balance}Kshs" 
           
     def deposit_statement(self):
-        print(*self.deposits, sep="\n")
+        for k in self.deposits:
+            print(f"{k}Kshs")
+
+
+        
 
     def withdraw_statement(self):
-        print(*self.withdraws, sep="\n")
+
+        for n in self.withdraws:
+            print(f"{n}Kshs") 
+
+    def withdrawal(self):
+        for n in self.withdraws:
+            x=n-100
+            print(f"Transaction fee of {x}Ksh was deduction 100Kshs.") 
+        
+    def current_balance(self):
+        bal=self.balance
+
+        print(f" you new balnce is {bal}Kshs")
+
+    
+
+
+
 
 
  
