@@ -1,9 +1,9 @@
 ## Welcome!
 Thank you for checking my repo.
 
-**To do the following work you need to have an understanding to the basics of python.**
-**How to create a class and add attribute respectively.**
-**Willing to think logically about how money transaction work, all in all you can do it**
+To do the following work you need to have an understanding to the basics of python.
+How to create a class and add attribute respectively.
+Willing to think logically about how money transaction work, all in all you can do it
 
 
 ## Account Transactions
