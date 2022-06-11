@@ -6,7 +6,7 @@ How to create a class and add attribute respectively.
 Willing to think logically about how money transaction work, all in all you can do it
 
 
-## Account Transactions
+## Class Methods
 Do the following to reach the target of each and every transaction step.
 Ensure deposit and withdraws are functioning as expected in the finance.
 **I may be wrong but avoid looking my solution to the problem before attempting by yourself first**
