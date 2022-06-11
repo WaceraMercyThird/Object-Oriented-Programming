@@ -13,14 +13,16 @@ Ensure deposit and withdraws are functioning as expected in the finance.
 
 ## Challenge
 Kindly read, understand the question and follow the instruction to get the expected outcome.
-1. Add a new attribute to the class Account called deposits which by default is an empty list.
-2. Add another attribute to the class Account called withdrawals which by default is an empty list.
-3. Modify the deposit method to append each successful deposit to self.deposits
-4. Modify the withdrawal method to append each successful withdrawal to self.withdrawals
-5. Add a new method called deposits_statement which prints each deposit in a new line
-6. Add a new method called withdrawals_statement which prints each withdrawal in a new line
-7. Modify the withdrawal method to include a transaction fee of 100 per transaction.
-8. Add a method to show the current balance
+1. Add these methods to class student - full_name, year_of_birth, initials. Create two instances and verify the work as expected
+2. Add these methods to class Account - deposit, withdraw. Create two instances of account and verify they work as expected.
+3. Add a new attribute to the class Account called deposits which by default is an empty list.
+4. Add another attribute to the class Account called withdrawals which by default is an empty list.
+5. Modify the deposit method to append each successful deposit to self.deposits
+6. Modify the withdrawal method to append each successful withdrawal to self.withdrawals
+7. Add a new method called deposits_statement which prints each deposit in a new line
+8. Add a new method called withdrawals_statement which prints each withdrawal in a new line
+9. Modify the withdrawal method to include a transaction fee of 100 per transaction.
+10. Add a method to show the current balance
 
 Your user should be able to:
 
