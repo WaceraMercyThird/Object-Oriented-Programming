@@ -1,7 +1,7 @@
 ## Welcome!
 Thank you for checking my repo.
 
-**To do the following work you need to have an understanding to the basics of python**
+**To do the following work you need to have an understanding to the basics of python.**
 **How to create a class and add attribute respectively.**
 **Willing to think logically about how money transaction work, all in all you can do it**
 
@@ -24,7 +24,7 @@ Kindly read, understand the question and follow the instruction to get the expec
 
 Your user should be able to:
 
-- Add deposit and recieve a message deplaying the balance in the account.
+- Add deposit and recieve a message desplaying the balance in the account.
 - Withdraw money from there account and return a message showing how much has been deductin and the new balance in the bank account.
 - See each and every deposit the user deposited.
 - See withdraw that was taken from the bank.
