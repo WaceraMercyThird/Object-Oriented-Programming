@@ -12,7 +12,7 @@ Ensure deposit and withdraws are functioning as expected in the finance.
 **I may be wrong but avoid looking my solution to the problem before attempting by yourself first**
 
 ## Challenge
-Kindly read, understand the question and follow the instruction to get the expected outcome.
+Kindly read, understand and follow the instruction to get the expected outcome.
 1. Add these methods to class student - full_name, year_of_birth, initials. Create two instances and verify the work as expected
 2. Add these methods to class Account - deposit, withdraw. Create two instances of account and verify they work as expected.
 3. Add a new attribute to the class Account called deposits which by default is an empty list.
