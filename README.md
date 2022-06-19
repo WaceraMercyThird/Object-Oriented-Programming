@@ -24,18 +24,18 @@ Kindly read, understand and follow the instruction to get the expected outcome.
 9. Modify the withdrawal method to include a transaction fee of 100 per transaction.
 10. Add a method to show the current balance
 11. Update the withdrawal method to store each withdrawal transaction as a dictionary like like this 
-{
-   "date": datetime object,
-   "amount": amount,
-   "narration": deposit or withdrawal
-}
+      {
+         "date": datetime object,
+         "amount": amount,
+         "narration": deposit or withdrawal
+      }
 
 12. Update the deposit method to store each deposit transaction as a dictionary like this 
-{
-   "date": datetime object,
-   "amount": amount,
-   "narration": deposit or withdrawal
-}
+      {
+         "date": datetime object,
+         "amount": amount,
+         "narration": deposit or withdrawal
+      }
 
 13. Add a new method  full_statement which combines both deposits and withdrawals into one list ordered by date and using a for loop prints each transaction in a new line like this
 16/06/22 —----- Deposit —---- 1000
