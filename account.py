@@ -1,3 +1,6 @@
+from datetime import datetime
+
+
 class Account:
    
     
@@ -9,7 +12,7 @@ class Account:
         self.deposits=[]
         self.withdraws=[]
         self.withdrawal_transaction=[]
-        self.time=datetime.now().strftime("%X")
+        self.time= datetime.now().strftime("%X")
         self.loan_balance=0
 
      # class Method
@@ -75,7 +78,7 @@ class Account:
         interest = amount*0.03
         if amount<=100:
             return "Loan must be more than 100"
-        elif self.loan>0:
+        elif self.loan_balance>0:
             return "Loan denied, kindly repay your current loan of {self.loan}"
         elif len(self.deposits)<10:
             return f"you deposits must be at least more than 10"
