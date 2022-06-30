@@ -1,3 +1,6 @@
+
+
+
 from datetime import datetime
 
 
@@ -23,7 +26,7 @@ class Account:
         else:
             self.balance+= amount
             transaction= {
-                "date": self.time,
+                "date": datetime.now(),
                 "amount": amount,
                 "narration": "You have deposited"
                 }
@@ -39,7 +42,7 @@ class Account:
         else:
             self.balance-= amount
             transaction= {
-                "date": self.time,
+                "date": datetime.now(),
                 "amount": amount,
                 "narration": "You have withdrawn"
                 }
@@ -65,7 +68,9 @@ class Account:
         print(f" you new balnce is {bal}Kshs")
 
     def statement(self):
-        for transaction in self.withdrawal_transaction:
+        statement = self.deposit+self.withdraw
+        statement.sort(key=lambda statement:statement['date'], reverse=True)
+        for transaction in statement:
             date = transaction["date"]
             amount = transaction["amount"]
             narration = transaction["narration"]
@@ -78,7 +83,7 @@ class Account:
         interest = amount*0.03
         if amount<=100:
             return "Loan must be more than 100"
-        elif self.loan_balance>0:
+        elif self.loan_balance!= 0:
             return "Loan denied, kindly repay your current loan of {self.loan}"
         elif len(self.deposits)<10:
             return f"you deposits must be at least more than 10"
@@ -106,6 +111,7 @@ class Account:
         else:
             payment = amount - self.loan_balance
             self.balance+=payment
+            self.balance=0
             transaction= {
                 "date": self.time,
                 "amount": amount,
@@ -121,5 +127,6 @@ class Account:
             return f"Your balance is {self.balance} and you need atleast {total}"
         else:
             self.balance-=total
+            account_instance.deposit(amount)
             return f"you have sent {amount} to {account_instance} your current balance is {self.balance}"
 
